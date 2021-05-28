@@ -30,6 +30,10 @@ pgrep systemd
        Example 4: Make all netscape processes run nicer:
 
               $ renice +4 $(pgrep netscape)
+
+       Example 5: List all process in detail from user id 1000:
+
+              $ pgrep -l -u 1000
 ```
 
 ## Reference
