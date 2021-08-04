@@ -34,6 +34,11 @@ pgrep systemd
        Example 5: List all process in detail from user id 1000:
 
               $ pgrep -l -u 1000
+
+       Example 6: Kill all ROS related process
+
+              $ for i in $(pgrep -f melodic); do kill $i; done
+
 ```
 
 ## Reference
